@@ -205,6 +205,12 @@ paths:
           in: query
           name: type
           description: Search for nodes with a type equal to
+        - schema:
+            type: string
+            minLength: 1
+          in: query
+          name: group
+          description: Search for inheritance nodes with the given group name
   '/user/{uniqueId}':
     parameters:
       - $ref: '#/components/parameters/uniqueId'
@@ -789,6 +795,12 @@ paths:
           in: query
           name: type
           description: Search for nodes with a type equal to
+        - schema:
+            type: string
+            minLength: 1
+          in: query
+          name: group
+          description: Search for inheritance nodes with the given group name
   '/group/{groupName}':
     parameters:
       - $ref: '#/components/parameters/groupName'
