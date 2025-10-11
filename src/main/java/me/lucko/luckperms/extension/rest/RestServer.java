@@ -84,7 +84,7 @@ public class RestServer implements AutoCloseable {
         this.setupErrorHandlers(this.app);
         this.routesClosable = this.setupRoutes(this.app, luckPerms);
 
-        LOGGER.info(String.format("[REST] Startup complete! Listening on http://%s:%d", address, port));
+        LOGGER.info("[REST] Startup complete! Listening on http://{}:{}", address == null ? "localhost" : address, port);
     }
 
     @Override

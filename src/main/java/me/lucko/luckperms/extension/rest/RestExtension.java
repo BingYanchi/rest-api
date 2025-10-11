@@ -43,7 +43,7 @@ public class RestExtension implements Extension {
     @Override
     public void load() {
         int port = RestConfig.getInteger("http.port", 8080);
-        String address = RestConfig.getString("http.address", "localhost");
+        String address = RestConfig.getString("http.address", null);
 
         Thread thread = Thread.currentThread();
         ClassLoader previousCtxClassLoader = thread.getContextClassLoader();
