@@ -10,7 +10,7 @@ info:
     name: MIT
     url: 'https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt'
 servers:
-  - url: https://luckperms-api.yistars.net
+  - url: http://luckperms-api.yistars.net
 tags:
   - name: Users
     description: API methods for LuckPerms users.
